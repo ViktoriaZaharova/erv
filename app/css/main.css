@@ -948,14 +948,101 @@ footer.rounded-padding {
   .btn-calculate:hover {
     background: #a0a0a0; }
 
+.about-country__info_mobile, .logo-mobile__footer {
+  display: none; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   /**/ }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  /**/ }
+@media only screen and (max-width: 1100px) {
+  h1 {
+    font-size: 52px; }
+  .insurance-country .h2-optima {
+    font-size: 24px;
+    margin: 32px 0 64px; }
+  .fomr-optima {
+    padding: 20px 24px;
+    width: 389px; }
+  .form_input_all_country {
+    width: 164px; }
+  .block-prices-info {
+    font-size: 28px; }
+    .block-prices-info .price-calculated {
+      font-size: 36px; }
+    .block-prices-info .span-rub {
+      font-size: 28px; }
+  .btns_form-prices button {
+    width: 164px;
+    padding: 0 10px;
+    line-height: 48px;
+    font-size: 16px; }
+  .ui-datepicker-trigger {
+    width: 16px;
+    height: 16px; }
+  .form_input_all_country .input_form_title {
+    height: 48px;
+    padding: 0 48px 0 12px; }
+  .select2-container .select2-selection--multiple {
+    min-height: 48px; }
+  .block_input_country:before {
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    left: 14px; }
+  .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    padding: 6px 6px 0 48px; }
+  .wrapp_form-inputs {
+    padding-top: 17px; }
+  .insurance-country__description {
+    font-size: 12px;
+    margin: 0 0 0 97px;
+    padding: 20px 16px 46px 16px; }
+    .insurance-country__description p {
+      font-size: 20px; }
+  .icon-fire {
+    font-size: 20px; }
+  .block_form-prices {
+    padding-top: 25px; }
+  .tooltip-box {
+    margin: auto 0 0 auto;
+    width: 227px;
+    height: 117px;
+    padding: 20px 17px 37px 23px; }
+  .tooltip-box__icon {
+    width: 31px;
+    height: 33px;
+    margin: 0 18px 0 0; }
+  .tooltip-box__text h3 {
+    font-size: 24px;
+    max-width: 90px; }
+    .tooltip-box__text h3 span {
+      font-size: 12px; }
+  .insurance-country {
+    padding: 136px 0 48px; }
+  .about-country__left {
+    width: 551px; }
+  .about-country__image {
+    height: 274px; }
+  .about-country__info {
+    width: calc(100% - 551px);
+    padding: 0 0 0 95px; }
+  .about-country {
+    padding: 64px 0 128px; }
+  .details-description {
+    padding: 0; }
+  .details-description .list-cube {
+    padding: 0 0 0 30px; }
+  .details-description .list-number {
+    padding: 0 0 0 30px; }
+  .list-number li {
+    margin: 0 0 28px; }
+    .list-number li:last-child {
+      margin: 0; }
+    .list-number li:before {
+      margin: 0 26px 0 0; } }
 
 @media screen and (max-width: 991px) {
   header .logo {
@@ -969,47 +1056,10 @@ footer.rounded-padding {
   header.fixed .logo {
     margin-top: 0; }
   .mobilemenutoggle {
-    width: 40px;
-    height: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border: 1px solid #c9b100;
-    border-radius: 5px;
-    position: relative;
-    -ms-flex-item-align: center;
-        align-self: center;
-    cursor: pointer; }
-    .mobilemenutoggle span {
-      width: 28px;
-      height: 6px;
-      display: inline-block;
-      background: #003f80;
-      position: absolute;
-      -webkit-transition: all 0.3s ease;
-      transition: all 0.3s ease;
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg); }
-      .mobilemenutoggle span:nth-child(1) {
-        left: 5px;
-        top: 6px; }
-      .mobilemenutoggle span:nth-child(2) {
-        left: 5px;
-        top: 16px; }
-      .mobilemenutoggle span:nth-child(3) {
-        left: 5px;
-        top: 26px; }
-    .mobilemenutoggle.active span:nth-child(1) {
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
-      top: 17px; }
-    .mobilemenutoggle.active span:nth-child(2) {
-      width: 0;
-      left: 50%; }
-    .mobilemenutoggle.active span:nth-child(3) {
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      top: 17px; }
+    font-size: 24px; }
   ul.main-menu:not(.others) {
     overflow: hidden;
     position: absolute;
@@ -1023,15 +1073,257 @@ footer.rounded-padding {
     padding: 10px 5px; }
   ul.main-menu li {
     margin-left: 5px;
-    margin-right: 5px; } }
+    margin-right: 5px; }
+  .block-all-contact-footer .all-contanct-elements:nth-child(2) {
+    padding: 0 0 0 30px; }
+  .block-all-contact-footer .all-contanct-elements:last-child {
+    max-width: 250px; }
+  .footer_logo_erv {
+    margin-left: 0;
+    max-width: 150px; }
+  footer.rounded-padding {
+    padding: 34px 30px 40px; } }
 
 /* Small Devices, Tablets */
+@media only screen and (max-width: 920px) {
+  .insurance-country__description {
+    margin: 0 0 0 40px; }
+  .fomr-optima {
+    width: 100%;
+    max-width: 320px;
+    padding: 20px 16px; }
+  .form_input_all_country {
+    width: 188px; }
+    .form_input_all_country:nth-child(2) {
+      width: 164px;
+      margin: 24px 0 0; }
+  .wrapp_form-inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .block_form-prices {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .block-prices-info {
+    margin: 0 auto 20px; } }
+
+@media only screen and (max-width: 850px) {
+  .about-country__left {
+    width: 450px; }
+  .about-country__info {
+    width: calc(100% - 450px);
+    padding: 0 0 0 40px; } }
+
+@media only screen and (max-width: 780px) {
+  .insurance-country__description {
+    margin: 0 0 0 20px; } }
+
 @media only screen and (max-width: 768px) {
-  /**/ }
+  .tooltip-box {
+    margin: 40px auto 0;
+    width: 272px;
+    height: 140px;
+    padding: 24px 22px 40px 28px; }
+  .tooltip-box__icon {
+    width: 38px;
+    margin: 0 22px 0 0; }
+  .tooltip-box__text h3 {
+    font-size: 32px;
+    max-width: none; }
+    .tooltip-box__text h3 span {
+      font-size: 16px; }
+  .about-country__left {
+    width: 100%; }
+  .about-country__info {
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    padding: 0; }
+  .about-country {
+    padding: 56px 0 64px; }
+  .about-country__title {
+    font-size: 32px;
+    margin: 0 0 24px; }
+  .about-country__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .about-country__info .insurance-country__description_box {
+      width: 50%;
+      margin: 0 0 24px; }
+      .about-country__info .insurance-country__description_box:last-child, .about-country__info .insurance-country__description_box:nth-child(4) {
+        display: none; }
+    .about-country__info p {
+      font-size: 16px; }
+  .footer_logo_erv {
+    max-width: 110px; }
+  .block-all-contact-footer .all-contanct-elements:last-child {
+    max-width: 180px; } }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 575px) {
+  .insurance-country__description {
+    display: none; }
+  .fomr-optima {
+    margin: 0 auto;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.5); }
+  .block_form-prices {
+    padding-top: 20px; }
+  .block-prices-info {
+    font-size: 20px; }
+    .block-prices-info .price-calculated {
+      font-size: 32px; }
+    .block-prices-info .span-rub {
+      font-size: 20px; }
+  .wrapp_form-inputs {
+    padding-top: 24px; }
+  .block-all-contact-footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .block-all-contact-footer .all-contanct-elements {
+    margin: 0 0 37px;
+    width: 50%; }
+    .block-all-contact-footer .all-contanct-elements:last-child {
+      max-width: none;
+      margin: 0;
+      width: 100%; }
+    .block-all-contact-footer .all-contanct-elements:nth-child(2) {
+      padding: 0; }
+    .block-all-contact-footer .all-contanct-elements:first-child {
+      display: none; }
+  .wrapper-info-footer {
+    margin: 32px 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .logo-mobile__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 96px;
+    margin: 56px 0 40px; }
+  .list-icon-footer {
+    margin: 0; }
+  .footer-address-contact__social {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; }
+  .footer-address-contact p {
+    font-weight: 300; } }
+
 @media only screen and (max-width: 480px) {
-  /**/ }
+  .mobilemenutoggle {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; }
+  .others {
+    display: none; }
+  header .container {
+    height: auto;
+    padding: 16px 28px; }
+  .logo .logo-img {
+    width: 80px; }
+  h1 {
+    font-size: 32px; }
+  .insurance-country h1 {
+    color: #333333;
+    font-weight: 500; }
+  .insurance-country .h2-optima {
+    margin: 24px 0 32px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500; }
+  .insurance-country {
+    padding: 100px 0 32px; }
+    .insurance-country .rounded-padding {
+      padding: 0 16px; }
+  .description-box {
+    font-size: 14px; }
+  .about-country__image {
+    border-radius: 0;
+    height: 320px;
+    width: calc(100% + 60px);
+    margin: 0 -30px 40px; }
+  .about-country__info_mobile {
+    display: block;
+    width: calc(100% + 60px);
+    margin: 64px -30px;
+    background: #EBEBEB;
+    padding: 0 30px; }
+    .about-country__info_mobile .insurance-country__description_box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      padding: 30px 0;
+      margin: 0;
+      font-size: 16px; }
+      .about-country__info_mobile .insurance-country__description_box:first-child {
+        border-bottom: 1px dotted #A0A0A0; }
+      .about-country__info_mobile .insurance-country__description_box .icon {
+        width: 36px; }
+      .about-country__info_mobile .insurance-country__description_box .text {
+        width: calc(100% - 36px);
+        padding: 0 0 0 32px; }
+      .about-country__info_mobile .insurance-country__description_box span {
+        color: #A0A0A0; }
+  .details-description {
+    margin: 0 0 72px; }
+    .details-description:last-child {
+      margin: 0; }
+    .details-description .list-cube, .details-description .list-number {
+      padding: 0 0 0 20px; }
+    .details-description .list-number {
+      margin: 20px 0 32px; }
+  .about-country__subtitle {
+    font-size: 20px;
+    margin: 0 0 24px; }
+  .list-cube li {
+    padding: 0 0 0 15px; }
+    .list-cube li:before {
+      width: 8px;
+      height: 8px; }
+  .list-number li {
+    margin: 0 0 23px; }
+    .list-number li:before {
+      font-size: 20px;
+      margin: 0 16px 0 0; }
+  .btn-calculate {
+    margin: 64px auto 0;
+    height: 48px;
+    font-size: 18px;
+    padding: 0 30px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
