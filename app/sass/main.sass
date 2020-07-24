@@ -1,0 +1,892 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  color: #333333
+
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+  &:hover
+    text-decoration: none
+
+.container
+  max-width: 1200px
+  width: 100%
+  margin: 0 auto
+
+.rounded-padding
+  padding: 0 30px
+
+button
+  cursor: pointer
+  outline: none
+  padding: 0
+  box-sizing: border-box
+  box-shadow: none
+  font-family: $default-font
+
+#agentform
+  color: #003c78
+  display: block
+  width: 100%
+  text-align: center
+  line-height: 18px
+  font-size: 12px
+  cursor: pointer
+  font-family: $default-font
+  padding: 10px
+  border: 1px solid #78a7cd
+  border-radius: 4px
+  font-weight: 400
+  white-space: nowrap
+
+  &:hover
+    color: white
+    background: #003c78
+
+h1
+  font-size: 76px
+
+h2
+  font-size: 36px
+
+
+//header
+header
+  position: fixed
+  width: 100%
+  z-index: 999
+  top: 0
+  left: 0
+
+  .container
+    padding: 0 30px
+    height: 80px
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+    background: white
+    display: flex
+    align-items: center
+    justify-content: space-between
+    transition: all 0.3s ease
+
+    &:before, &:after
+      display: none
+  .logo
+    margin: 0 0 0 10px
+    .logo-img, .logo-caption
+      -webkit-transition: all 0.3s ease
+      transition: all 0.3s ease
+  ul.main-menu, .logo
+    -webkit-transition: all 0.3s ease
+    transition: all 0.3s ease
+
+  &.fixed
+    .container
+      height: 80px
+
+    .logo
+      .logo-img
+        width: 108px
+
+      .logo-caption
+        -webkit-transform: scale(0)
+        transform: scale(0)
+
+      padding-left: 12px
+      margin-top: 20px
+
+.logo
+  .logo-img
+    width: 105px
+
+
+.main-menu
+  padding: 0
+  list-style: none
+  height: 100%
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: flex-end
+  margin: 0 16px 0 auto
+  li
+    display: inline-block
+
+    &:first-child
+      padding: 0
+
+    &.active a
+      border-bottom: 2px solid #beb400
+      color: #A0A0A0
+
+    a
+      display: block
+      width: 100%
+      height: auto
+      font-family: $default-font
+      font-size: 14px
+      font-weight: 400
+      text-align: center
+      color: #323232
+      transition: .2s
+      padding: 10px 12px
+      border-top: 2px solid transparent
+      border-bottom: 2px solid transparent
+
+      &:hover
+        border-bottom: 2px solid #beb400
+        text-decoration: none
+
+    &.agents-login
+      position: relative
+
+    &.my-erv a
+      background-color: #beb400
+      color: #fff
+
+.mobilemenutoggle
+  display: none
+
+//insurance-country
+.insurance-country
+  background: url("../images/bg-banner.png") no-repeat center
+    size: cover
+  padding: 220px 0 48px
+  h1
+    color: #fff
+  .h2-optima
+    color: #fff
+    margin: 32px 0 86px
+
+.ui-datepicker-calendar .highlight
+  background-color: #b0d7ed !important
+
+.insurance-country__wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.fomr-optima
+  width: 464px
+  height: auto
+  padding: 28px 24px
+  background: rgba(#333, .5)
+  border-radius: 4px
+
+.label_country
+  color: #a0a0a0
+  font-family: $default-font
+  font-size: 12px
+  font-weight: 300
+  margin-bottom: 20px
+
+.form_input_all_country
+  .block_input_country
+    border-bottom: 2px solid #a0a0a0
+
+.block_input_country
+  position: relative
+  width: 100%
+  transition: 0.3s ease-in-out
+  &:before
+    color: #beb400
+    font-size: 24px
+    top: 15px
+    left: 16px
+    position: absolute
+    z-index: 1
+    margin: 0
+
+.input_country
+  border: none
+  outline: none
+  color: #333
+  font-family: $default-font
+  font-size: 18px
+  font-weight: 300
+  margin-top: 10px
+  z-index: 2
+  background: transparent
+
+.input_date
+  border: none
+  outline: none
+  color: #333
+  font-family: $default-font
+  font-size: 18px
+  font-weight: 300
+
+
+.wrapp_form-inputs
+  padding-top: 28px
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+
+
+
+.form_input_all_country
+  width: 200px
+  .input_form_title
+    color: #A0A0A0
+    font-family: $default-font
+    font-size: 15px
+    border: none
+    padding: 0 56px 0 15px
+    display: inline-block
+    font-weight: normal
+    background: #EBEBEB
+    box-sizing: border-box
+    width: 100%
+    height: 56px
+    border-radius: 4px 4px 0 0
+  label
+    width: 100%
+    display: inline-block
+    color: #fff
+    margin: 0 0 5px
+    font-size: 12px
+
+
+.block_form-prices
+  padding-top: 45px
+
+.block_form-prices
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+
+.block-prices-info
+  position: relative
+  display: flex
+  align-items: flex-end
+  text-align: center
+  color: #fff
+  font-size: 36px
+  margin-bottom: 0
+  font-weight: normal
+  span
+    font-size: 45px
+    font-weight: normal
+  .span-rub
+    font-size: 36px
+    font-weight: normal
+    margin: 0 0 0 3px
+
+.flaticon-ruble:before
+  font-size: 30px
+  color: #fff
+  margin-left: 2px
+
+
+.lable_optima-text
+  color: #fff
+  font-size: 12px
+  //font-weight: 300
+  letter-spacing: 0.3px
+  margin: 0 0 5px
+  display: inline-block
+
+label.focused-label
+  top: -20px
+  left: 0
+  font-size: 14px
+
+.input_country + label.focused-label
+  top: 0
+
+.btns_form-prices
+  button
+    border: none
+    background: #beb400
+    color: #fff
+    display: inline-block
+
+    font-size: 24px
+    font-weight: 400
+    border-radius: 3px
+    line-height: 55px
+    padding: 0 60px
+    cursor: pointer
+    transition: 0.2s ease-in-out
+
+  &.active-btn button
+    &:hover
+      background: rgba(190, 180, 0, 0.8)
+    background: #beb400
+
+.btns_form-prices button:disabled
+  background: #a0a0a0
+  
+
+
+.select2-container .select2-selection--multiple
+  min-height: 56px
+
+
+
+.select2-container--default.select2-container--focus .select2-selection--multiple
+  border: none
+    bottom: 2px solid #BEB400
+
+.select2-container--default .select2-selection--multiple
+  border: none
+    bottom: 2px solid #a0a0a0
+  background: #EBEBEB
+  border-radius: 4px 4px 0 0
+  box-sizing: border-box
+  .select2-selection__rendered
+
+    padding: 10px 10px 0 56px
+
+  .select2-selection__choice
+    border: none
+    background: #CFCFCF
+    font-size: 18px
+    font-weight: 300
+    padding: 6px 6px 6px 8px
+
+  .select2-selection__rendered li
+    margin: 0
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove
+  float: right
+  margin: -3px 0 0 8px
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #A0A0A0
+  font-weight: normal
+
+.ui-datepicker-trigger
+  display: block
+  width: 18px
+  height: 18px
+  position: absolute
+  cursor: pointer
+  top: 50%
+  transform: translate(0,-50%)
+  right: 19px
+  z-index: 10
+
+  &.insurance-date
+    display: block
+    width: 25px
+    height: 25px
+    position: absolute
+    cursor: pointer
+    bottom: 25px
+    right: 12px
+
+
+/* дейтпикер на главной
+#ui-datepicker-div
+  z-index: 9999 !important
+
+.ui-datepicker-div
+  z-index: 9999
+
+.ui-datepicker
+  padding: .2em .2em 0
+  background-color: white
+  border: 1px solid #c0c0c0
+  box-shadow: 0 0 6px 2px #d8d8d8
+  display: none
+
+
+.form__col .form__input
+  &.form__input--to, &.form__input--from
+    padding-bottom: 0
+    background-color: white
+
+.ui-datepicker
+  .ui-datepicker-prev, .ui-datepicker-next
+    position: absolute
+    width: 50px
+    height: 20px
+    cursor: pointer
+    top: 8px
+    font-size: 18px
+
+//.ui-corner-all
+//  display: block
+
+.ui-datepicker-prev
+  left: 1rem
+  top: 1rem
+
+.ui-datepicker-next
+  right: 1rem
+  top: 1rem
+
+.ui-corner-all
+  color: #323232
+
+.formError
+  z-index: 90
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after
+  margin-left: 0
+  
+.ui-datepicker-trigger.insurance-date
+  display: block
+  width: 25px
+  height: 25px
+  position: absolute
+  cursor: pointer
+  bottom: 25px
+  right: 12px
+
+.ui-datepicker-title
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+
+.ui-datepicker-month
+  color: #333333
+  font-family: $default-font
+  font-size: 18px
+  font-weight: 300
+
+.ui-datepicker-year
+  color: #A0A0A0
+  
+  font-size: 18px
+  font-weight: 300
+
+.ui-datepicker-calendar
+  > thead > tr > th
+    font-size: 16px
+    font-family: $default-font
+    color: #A0A0A0
+    font-weight: 100
+    height: 30px
+    vertical-align: middle
+    &.ui-datepicker-week-end
+      color: #333333
+
+  td
+    text-align: center
+    vertical-align: middle
+
+.ui-datepicker td.ui-state-disabled span
+  color: #9e9e9e
+
+.ui-datepicker-calendar td
+  a
+    display: block
+    width: 49px
+    height: 49px
+    border-radius: 5px
+    line-height: 49px
+    margin: 5px
+    font-size: 1.62em
+    color: #333333
+
+  &.ui-datepicker-week-end a
+    font-weight: 400
+
+  a
+    &:hover, &.ui-state-active
+      background-color: #beb400
+      color: #fff
+
+.ui-datepicker-group
+  padding: 15px  
+
+
+//footer
+footer.rounded-padding
+  padding: 36px 30px 40px
+
+.block-all-contact-footer
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+
+.footer_logo_erv
+  margin-top: 30px
+  margin-left: 34px
+  display: inline-block
+
+.block-lists-footer p
+  line-height: 20px
+  color: #333
+  font-size: 14px
+  font-weight: 400
+  margin-bottom: 9px
+
+.ul-lists-footer
+  margin: 0
+  padding: 0
+  list-style: none
+
+  .lists-footer-item
+    margin-bottom: 2px
+
+    a
+      color: #003c78
+      font-size: 12px
+      font-weight: 400
+      letter-spacing: .025em
+
+.list-icon-footer
+  margin: 0
+  padding: 0
+  list-style: none
+  display: flex
+  margin-left: 84px
+
+  li
+    margin-right: 15px
+
+.footer-address-contact
+  .list-icon-footer li a
+    width: 32px
+    height: 32px
+    display: inline-block
+
+    &:before
+      font-size: 33px
+      color: #a0a0a0
+      transition: 0.2s ease-in-out
+      -webkit-transition: 0.2s ease-in-out
+      -moz-transition: 0.2s ease-in-out
+      -o-transition: 0.2s ease-in-out
+
+    &:hover:before
+      color: rgba(111, 179, 213, 1)
+
+  p
+    font-size: 12px
+    line-height: 16px
+    color: #333
+    font-weight: 400
+    letter-spacing: .025em
+
+    a
+      font-size: 12px
+      line-height: 16px
+      color: #003c78
+      display: inline-block
+      font-weight: 400
+      letter-spacing: .025em
+
+.wrapper-info-footer
+  display: flex
+  margin-top: 35px
+
+.block-copy-footer
+  margin: 33px 0 0
+  p
+    color: #a0a0a0
+    font-size: 10px
+    font-weight: 400
+    letter-spacing: .025em
+
+.block-all-contact-footer .all-contanct-elements:nth-child(2)
+  padding-left: 59px
+
+//insurance-country__description
+.insurance-country__description
+  background: rgba(#333,.5)
+  border-radius: 4px
+  color: #fff
+  margin: 0 0 0 112px
+  padding: 20px 40px 24px 16px
+
+
+.insurance-country__description_box
+  margin: 0 0 28px
+  &:last-child
+    margin: 0
+  span
+    font-size: 12px
+    margin: 0 0 5px
+    display: block
+    color: #BEB400
+  p
+    font-size: 24px
+  .insurance-country__description_status
+    font-size: 14px
+
+.insurance-country__description_list
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin: 5px 0
+
+  .icon-fire-zero
+    &:before
+      color: #A0A0A0
+
+.tooltip-box
+  width: 272px
+  height: 140px
+  margin: 270px 0 0 auto
+  background: url("../images/tooltip-bg.svg") no-repeat center
+    size: 100%
+  padding: 24px 8px 40px 28px
+  display: flex
+  align-items: flex-start
+
+.tooltip-box__text
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+
+.tooltip-box__icon
+  width: 38px
+  min-width: 38px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 22px 0 0
+
+.tooltip-box__text
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  max-width: 164px
+  width: 100%
+  h3
+    font-size: 32px
+    max-width: 120px
+    span
+      font-size: 16px
+      display: block
+      line-height: 1
+
+.icon-question
+  font-size: 20px
+  color: #78A7CD
+
+.icon-fire
+  font-size: 24px
+
+
+.icon-simple
+  &:before
+    font-family: 'simple-line-icons' !important
+
+.description-box
+  font-size: 18px
+  font-weight: 300
+
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+//about-country
+.about-country
+  padding: 128px 0
+
+.about-country__title
+  width: 100%
+  margin: 0 0 36px
+  font-size: 48px
+  color: #333333
+
+.about-country__wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.about-country__left
+  width: 752px
+
+.about-country__image
+  width: 100%
+  margin: 0 0 40px
+  height: 376px
+  border-radius: 8px
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.about-country__info
+  width: calc(100% - 752px)
+  padding: 0 0 0 97px
+  p
+    font-size: 20px
+  .insurance-country__description_box
+    margin: 0 0 24px
+    .color-default
+      color: #333
+    .description
+      font-size: 18px
+      max-width: 272px
+    .icon
+      margin: 0 0 25px
+
+.icon-location-pin
+  font-size: 36px
+  color: #BEB400
+  margin: 0 0 23px
+
+.details-description
+  margin: 128px 0 0
+  padding: 0 0 0 90px
+  .list-cube
+    padding: 0 0 0 40px
+    margin: 18px 0 24px
+  .list-number
+    margin: 32px 0 40px
+    padding: 0 0 0 120px
+
+
+.about-country__subtitle
+  margin: 0 0 32px
+  font-size: 32px
+  width: 100%
+
+.list-cube
+  font-weight: normal
+  li
+    position: relative
+    padding: 0 0 0 20px
+    margin: 0 0 5px
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate(0,-50%)
+      width: 10px
+      height: 10px
+      background: #BEB400
+
+.list-number
+  counter-reset: item
+  li
+    margin: 0 0 36px
+    position: relative
+    display: flex
+    align-items: flex-start
+    &:last-child
+      margin: 0
+    &:before
+      counter-increment: item
+      display: inline-block
+      content: counters(item, ".")
+      color: #BEB400
+      margin: 0 45px 0 0
+      font-size: 32px
+      font-weight: normal
+
+.btn-calculate
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 128px auto 0
+  background: #BEB400
+  color: #fff
+  width: fit-content
+  height: 56px
+  padding: 0 14px
+  border-radius: 4px
+  font-size: 24px
+  &:hover
+    background: #a0a0a0
+
+
+@import "media"
+// Всегда в конце
