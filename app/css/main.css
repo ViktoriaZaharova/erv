@@ -260,6 +260,10 @@ header {
     color: #fff;
     margin: 32px 0 86px; }
 
+.insurance-country-turkey {
+  background: url("../images/bg-banner2.jpg") no-repeat center;
+    background-size: cover; }
+
 .ui-datepicker-calendar .highlight {
   background-color: #b0d7ed !important; }
 
@@ -717,8 +721,14 @@ footer.rounded-padding {
     color: #BEB400; }
   .insurance-country__description_box p {
     font-size: 24px; }
+    .insurance-country__description_box p span {
+      color: #fff; }
+    .insurance-country__description_box p .conversion {
+      color: inherit; }
   .insurance-country__description_box .insurance-country__description_status {
     font-size: 14px; }
+  .insurance-country__description_box .description p {
+    font-size: 18px; }
 
 .insurance-country__description_list {
   display: -webkit-box;
@@ -1679,4 +1689,6 @@ ul.breadcrumbs {
     padding: 100px 0 50px; }
   .image-holding__title {
     padding: 10px;
-    font-size: 20px; } }
+    font-size: 20px; }
+  .insurance-country__description_box .description p {
+    font-size: 16px; } }
