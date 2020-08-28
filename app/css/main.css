@@ -1209,6 +1209,142 @@ ul.breadcrumbs {
 .web {
   color: #003C78; }
 
+.insurance-country-russian {
+  padding: 229px 0 48px;
+  background: url("../images/bg-banner3.jpg") no-repeat center;
+    background-size: cover;
+  position: relative; }
+  .insurance-country-russian:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    background: #223880;
+    opacity: .6; }
+  .insurance-country-russian h1 {
+    font-size: 60px; }
+  .insurance-country-russian > * {
+    position: relative;
+    z-index: 1; }
+  .insurance-country-russian .h2-optima {
+    margin: 12px 0 239px;
+    font-size: 28px; }
+  .insurance-country-russian .fomr-optima {
+    width: 656px;
+    background: rgba(190, 180, 0, 0.67);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px); }
+    .insurance-country-russian .fomr-optima .btns_form-prices {
+      width: 175px; }
+      .insurance-country-russian .fomr-optima .btns_form-prices button {
+        width: 100%;
+        padding: 0 25px;
+        font-size: 18px;
+        font-weight: normal; }
+  .insurance-country-russian .wrapp_form-inputs {
+    padding: 0; }
+    .insurance-country-russian .wrapp_form-inputs .form_input_all_country {
+      width: 176px; }
+      .insurance-country-russian .wrapp_form-inputs .form_input_all_country:first-child {
+        width: 232px; }
+  .insurance-country-russian .tooltip-box {
+    margin: 0; }
+  .insurance-country-russian .insurance-country__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+  .insurance-country-russian .block-prices-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    letter-spacing: 0.025em;
+    font-size: 12px;
+    font-weight: normal;
+    width: 175px; }
+    .insurance-country-russian .block-prices-info span {
+      font-size: 28px; }
+  .insurance-country-russian .block_form-prices {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 24px 0 0; }
+    .insurance-country-russian .block_form-prices .input_form_title {
+      text-align: right; }
+    .insurance-country-russian .block_form-prices .ui-datepicker-trigger {
+      color: #A0A0A0;
+      font-size: 18px;
+      text-align: center;
+      line-height: 24px; }
+    .insurance-country-russian .block_form-prices .form_input_all_country {
+      width: 232px; }
+      .insurance-country-russian .block_form-prices .form_input_all_country label, .insurance-country-russian .block_form-prices .form_input_all_country .block_input_country {
+        max-width: 156px; }
+
+.advantages-insurance {
+  padding: 128px 0; }
+
+.advantages-insurance__title {
+  font-size: 32px;
+  margin: 0 0 64px; }
+
+.advantages-insurance__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.advantages-insurance__box {
+  position: relative;
+  padding: 0 0 28px;
+  max-width: 255px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px; }
+  .advantages-insurance__box:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 64px;
+    height: 1px;
+    background: #BEB400; }
+  .advantages-insurance__box h3 {
+    margin: 0 0 20px;
+    font-size: 20px; }
+
+.advantages-insurance__icon {
+  height: 64px;
+  width: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 30px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
